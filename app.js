@@ -5,6 +5,7 @@ const songContainer = document.getElementById("songGenerator");
 const songButton = document.getElementById("randomSong");
 
 let allSongs = [];
+let usedSongs = [];
 
 // As a user, I would like a random generator page where I can get wedding song ideas. I would like to know the name of the song, the artist and the style of music. 
 // 1. Create a constructor function for wedding songs; using the key:value pairs for a name, the artist and the genre of music.
@@ -25,21 +26,21 @@ function getRandomSong() {
   
 //3. Create a render function to display the song details and image.
 
-Song.prototype.renderSong = function() {
-    const image = document.createElement("img");
-    image.setAttribute("src", this.imageUrl);
-    image.setAttribute("alt", `An image interpretation of ${this.genre} music`);
-    songContainer.appendChild(image);
+// Song.prototype.renderSong = function() {
+//     const image = document.createElement("img");
+//     image.setAttribute("src", this.imageUrl);
+//     image.setAttribute("alt", `An image interpretation of ${this.genre} music`);
+//     songContainer.appendChild(image);
 
-    const h3 = document.createElement("h3");
-    h3.textContent = "Your First Dance song is:"
-    songContainer.appendChild(h3);
+//     const h3 = document.createElement("h3");
+//     h3.textContent = "Your First Dance song is:"
+//     songContainer.appendChild(h3);
 
-    const p = document.createElement("p");
-    p.textContent = `${this.songName} by ${this.artist}.`
-    songContainer.appendChild(p);
+//     const p = document.createElement("p");
+//     p.textContent = `${this.songName} by ${this.artist}.`
+//     songContainer.appendChild(p);
 
-}
+// }
 
 const atLast = new Song("At Last", "Etta James", "RnB");
 const thinkingOutLoud = new Song("Thinking Out Loud", "Ed Sheeran", "pop");
@@ -55,11 +56,44 @@ const AllIAskOfYou = new Song("All I Ask of You", "The Phantom of the Opera", "m
 // Create a button for the user to click to generate a song.
 //  Add an event listener to the button to listen for clicks and to then randomise and display the song.
 
-function handleClick(event) {
-    songButton.addEventListener("click", getRandomSong);
-    renderSong();
+
+
+function renderSong() {
+   let song1 = getRandomSong(); 
+  
+    while (
+      usedSongs.includes(song1)
+          ) {
+      
+      song1 = getRandomSong();
+    }
+
+    const image = document.createElement("img");
+    image.setAttribute("src", imageUrl);
+    image.setAttribute("alt", `An image interpretation of ${genre} music`);
+    songContainer.appendChild(image);
+
+    const h3 = document.createElement("h3");
+    h3.textContent = "Your First Dance song is:"
+    songContainer.appendChild(h3);
+
+    const p = document.createElement("p");
+    p.textContent = `${songName} by ${artist}.`
+    songContainer.appendChild(p);
+
+  
+    usedSongs = [];
+    usedSongs.push(song1);
+    console.log(usedSongs);
+  }
+
+ function handleClick(event) {
+    songButton.addEventListener("click", renderSong);
+    
 }
 
+console.log(allSongs);
+console.log(usedSongs);
 // Song.prototype.generateSong(){
 
 // }
