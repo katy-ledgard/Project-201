@@ -13,13 +13,37 @@ function Song(songName, artist, genre, fileExtension = 'jpg') {
     this.artist = artist;
     this.genre = genre;
     this.imageUrl = `assets/${genre}.${fileExtension}`;
+    allSongs.push(this);
 }
 
 // 2. Create a random function that will loop through the new constructor objects.
 
+function getRandomSong() {
+    return Math.floor(Math.random() * allSongs.length);
+  }
+  
+//3. Create a render function to display the song details and image.
 
-// 3. Create a button for the user to click to generate a song.
+Song.prototype.renderSong = function() {
+    const image = document.createElement("img");
+    image.setAttribute("src", this.imageUrl);
+    image.setAttribute("alt", `An image interpretation of ${this.genre} music`);
+    songContainer.appendChild(image);
 
+    const h3 = document.createElement("h3");
+    h3.textContent = "Your First Dance song is:"
+    songContainer.appendChild(h3);
 
+    const p = document.createElement("p");
+    p.textContent = `${this.songName} by ${this.artist}.`
+    songContainer.appendChild(p);
 
-// 4. Add an event listener to the button to listen for clicks and to then randomise and display the song.
+}
+
+const atLast = new Song("At Last", "Etta James", "RnB");
+
+// atLast.renderSong();
+
+// 4. Create function to handle randomiser button:
+// Create a button for the user to click to generate a song.
+//  Add an event listener to the button to listen for clicks and to then randomise and display the song.
