@@ -2,7 +2,6 @@
 console.log("Hello")
 
 const songContainer = document.getElementById("songGenerator");
-const songButton = document.getElementById("randomSong");
 
 let allSongs = [];
 let usedSongs = [];
@@ -26,21 +25,22 @@ function getRandomSong() {
   
 //3. Create a render function to display the song details and image.
 
-// Song.prototype.renderSong = function() {
-//     const image = document.createElement("img");
-//     image.setAttribute("src", this.imageUrl);
-//     image.setAttribute("alt", `An image interpretation of ${this.genre} music`);
-//     songContainer.appendChild(image);
+Song.prototype.renderSong = function() {
+  
+    const image = document.createElement("img");
+    image.setAttribute("src", this.imageUrl);
+    image.setAttribute("alt", `An image interpretation of ${this.genre} music`);
+    songContainer.appendChild(image);
 
-//     const h3 = document.createElement("h3");
-//     h3.textContent = "Your First Dance song is:"
-//     songContainer.appendChild(h3);
+    const h3 = document.createElement("h3");
+    h3.textContent = "Your First Dance song is:"
+    songContainer.appendChild(h3);
 
-//     const p = document.createElement("p");
-//     p.textContent = `${this.songName} by ${this.artist}.`
-//     songContainer.appendChild(p);
+    const p = document.createElement("p");
+    p.textContent = `${this.songName} by ${this.artist}.`
+    songContainer.appendChild(p);
 
-// }
+}
 
 const atLast = new Song("At Last", "Etta James", "RnB");
 const thinkingOutLoud = new Song("Thinking Out Loud", "Ed Sheeran", "pop");
@@ -48,7 +48,9 @@ const KissTheRain = new Song("Kiss the Rain", "Yiruma", "classical");
 const MissAThing = new Song("I Don't Wanna Miss a Thing", "Aerosmith", "rock");
 const AllIAskOfYou = new Song("All I Ask of You", "The Phantom of the Opera", "musical-theatre");
 
-
+const songButton = document.getElementById("randomSong").addEventListener("click", function(){
+  
+});
 
 // atLast.renderSong();
 
@@ -58,42 +60,45 @@ const AllIAskOfYou = new Song("All I Ask of You", "The Phantom of the Opera", "m
 
 
 
-function renderSong() {
-   let song1 = getRandomSong(); 
+// function renderSong() {
+//    let song1 = getRandomSong(); 
   
-    while (
-      usedSongs.includes(song1)
-          ) {
+//     while (
+//       usedSongs.includes(song1)
+//           ) {
       
-      song1 = getRandomSong();
-    }
+//       song1 = getRandomSong();
+//     }
 
-    const image = document.createElement("img");
-    image.setAttribute("src", imageUrl);
-    image.setAttribute("alt", `An image interpretation of ${genre} music`);
-    songContainer.appendChild(image);
+//   renderResult()
+//   }
 
-    const h3 = document.createElement("h3");
-    h3.textContent = "Your First Dance song is:"
-    songContainer.appendChild(h3);
+  //   const image = document.createElement("img");
+  //   image.setAttribute("src", imageUrl);
+  //   image.setAttribute("alt", `An image interpretation of ${genre} music`);
+  //   songContainer.appendChild(image);
 
-    const p = document.createElement("p");
-    p.textContent = `${songName} by ${artist}.`
-    songContainer.appendChild(p);
+  //   const h3 = document.createElement("h3");
+  //   h3.textContent = "Your First Dance song is:"
+  //   songContainer.appendChild(h3);
+
+  //   const p = document.createElement("p");
+  //   p.textContent = `${songName} by ${artist}.`
+  //   songContainer.appendChild(p);
 
   
-    usedSongs = [];
-    usedSongs.push(song1);
-    console.log(usedSongs);
-  }
+  //   usedSongs = [];
+  //   usedSongs.push(song1);
+  //   console.log(usedSongs);
+  // }
 
- function handleClick(event) {
-    songButton.addEventListener("click", renderSong);
+//  function handleClick() {
+//     songButton.addEventListener("click", renderSong);
     
-}
+// }
 
 console.log(allSongs);
-console.log(usedSongs);
+// console.log(usedSongs);
 // Song.prototype.generateSong(){
-
-// }
+  
+// handleClick();
