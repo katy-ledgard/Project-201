@@ -7,6 +7,10 @@
     --background-color: #EED2CC ;
 }
 
+img {
+    width: 100%;
+}
+
 h1 {
     color: black;
 }
@@ -31,12 +35,41 @@ footer {
     width: 95%;
     margin: 20px auto;
     height: 200px;
-    border-radius: 15%;
-    
+        
 }
 
 #bio p {
     padding: 20px;
+}
+
+.spotlight {
+    width: 95%;
+}
+
+.links-section {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 20px;
+    
+}
+
+.link-card {
+    border: 1px solid black;
+    min-width: 200px;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 5px;
+    flex-shrink: 0;
+       
+}
+
+
+.link-card img{
+    max-width: 350px;
+
 }
 
 .default {
