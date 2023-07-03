@@ -49,9 +49,17 @@ const AllIAskOfYou = new Song("All I Ask of You", "The Phantom of the Opera", "m
 
 
 
-
 // atLast.renderSong();
 
 // 4. Create function to handle randomiser button:
 // Create a button for the user to click to generate a song.
 //  Add an event listener to the button to listen for clicks and to then randomise and display the song.
+
+function handleClick(event) {
+    songButton.addEventListener("click", getRandomSong);
+    renderSong();
+}
+
+// Song.prototype.generateSong(){
+
+// }
