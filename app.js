@@ -2,6 +2,7 @@
 console.log("Hello")
 
 const songContainer = document.getElementById("songGenerator");
+const songButton = document.getElementById("randomSong");
 
 let allSongs = [];
 
@@ -41,6 +42,13 @@ Song.prototype.renderSong = function() {
 }
 
 const atLast = new Song("At Last", "Etta James", "RnB");
+const thinkingOutLoud = new Song("Thinking Out Loud", "Ed Sheeran", "pop");
+const KissTheRain = new Song("Kiss the Rain", "Yiruma", "classical");
+const MissAThing = new Song("I Don't Wanna Miss a Thing", "Aerosmith", "rock");
+const AllIAskOfYou = new Song("All I Ask of You", "The Phantom of the Opera", "musical-theatre");
+
+
+
 
 // atLast.renderSong();
 
