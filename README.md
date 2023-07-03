@@ -12,3 +12,4 @@
 - Photo by Kyle Roxas: https://www.pexels.com/photo/woman-wearing-white-floral-wedding-dress-standing-on-rocks-near-body-of-water-2122363/
 - Photo by Amar  Preciado: https://www.pexels.com/photo/a-wedding-venue-12954021/
 - Photo by Jeremy Wong: https://www.pexels.com/photo/4-tier-cake-on-cake-stand-1038711/
+- Photo by Trung Nguyen: https://www.pexels.com/photo/bridge-and-groom-standing-while-holding-flower-bouquet-2959192/

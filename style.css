@@ -31,6 +31,39 @@ footer {
     margin: 0 auto;
 }
 
+.hero-section {
+    max-height: 600px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    /* border: 1px solid black; */
+}
+
+.hero-section img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero-text {
+    width: 80%;
+  }
+  
+  .hero-text h2 {
+    font-size: 3.3rem;
+    margin-bottom: 12px;
+    color: #000000;
+  }
+  
+  .hero-text p {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+
 #bio {
     width: 95%;
     margin: 20px auto;
@@ -40,6 +73,12 @@ footer {
 
 #bio p {
     padding: 20px;
+}
+
+.choose-theme form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .spotlight {
@@ -84,3 +123,23 @@ background-color:rgb(137, 197, 137);
     background-color: rgb(178, 144, 178);
 }
 
+@media (max-width: 884px) {
+    .hero-section {
+      margin-top: 10px;
+      flex-direction: column-reverse;
+    }
+    .hero-text {
+      width: 100%;
+      text-align: center;
+    }
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+   
+  @media (max-width: 678px) {
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+  }
