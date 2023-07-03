@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --background-color: #EED2CC ;
+}
+
+h1 {
+    color: black;
+}
+
+header {
+    background-color: var(--background-color);
+    width: 100%;
+}
+
+footer {
+    background-color: var(--background-color);
+    width: 100%;
+    min-height: 100px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#bio {
+    width: 95%;
+    margin: 20px auto;
+    height: 200px;
+    border-radius: 15%;
+    
+}
+
+#bio p {
+    padding: 20px;
+}
+
+.default {
+    background-color: var(--background-color);
+}
+
+.green {
+background-color:rgb(137, 197, 137);
+}
+
+.purple {
+    background-color: rgb(178, 144, 178);
+}
+

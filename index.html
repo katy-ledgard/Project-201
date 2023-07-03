@@ -1,34 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <meta name="description" content="A page filled with Wedding inspiration">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>TITLE</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Random Generator</a></li>
-            </ul>
-        </nav>
+    <meta name="description" content="A page filled with Wedding inspiration" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>TITLE</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Random Generator</a></li>
+        </ul>
+      </nav>
+      <section class="choose-theme">
+        <form>
+          <label for="default">
+            <input
+              type="radio"
+              name="theme"
+              id="defaultButton"
+              class="theme"
+              value="default"
+              checked
+            />
+            <span>Default Theme</span>
+          </label>
+          <label for="green">
+            <input
+              type="radio"
+              name="theme"
+              id="greenButton"
+              class="theme"
+              value="green"
+            />
+            <span>Sage Green Theme</span>
+          </label>
+          <label for="purple">
+            <input
+              type="radio"
+              name="theme"
+              id="purpleButton"
+              class="theme"
+              value="purple"
+            />
+            <span>Purple Theme</span>
+          </label>
+        </form>
+      </section>
     </header>
     <main>
-        <section class="hero-section"></section>
-        <section class="bio-section"></section>
-        <article class="spotlight"></article>
-        <section class="links-section">
-            <div>Link 1</div>
-            <div>Link 2</div>
-            <div>Link 3</div>
-        </section>
+      <section class="hero-section"></section>
+      
+      <div class="container">
+
+      <section id="bio" class="default">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id quas dolore fuga veniam expedita deserunt doloribus minus impedit! Optio sequi numquam recusandae saepe temporibus molestias quia assumenda esse quas.</p>
+      </section>
+      <article class="spotlight"></article>
+      <section class="links-section">
+        <div>Link 1</div>
+        <div>Link 2</div>
+        <div>Link 3</div>
+      </section>
+
+    </div>
     </main>
-    <footer></footer>
+    <footer id="footer"></footer>
+    <script src="app2.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
