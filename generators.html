@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <meta name="description" content="Wedding inspiration and wedding random generators">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <meta
+      name="description"
+      content="Wedding inspiration and wedding random generators"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header></header>
     <main>
-        <article id="songGenerator">
-            <h2>First Dance Random Generator.</h2>
-            <button id="randomSong">Get Song.</button>
-        </article>
+      <section id="songGenerator">
+        <h2>First Dance Random Generator.</h2>
+      </section>
+      <section>
+        <button id="randomSong">Get Song.</button>
+      </section>
+      <section>
+        <form>
+          <fieldset>
+            <legend>Add a Song</legend>
+            <label for="song-name">Song Title:</label>
+            <input
+              type="text"
+              id="song-name"
+              name="songName"
+              placeholder="Song Title..."
+              required
+            />
+            <label for="artist-name">Artist:</label>
+            <input
+              type="text"
+              id="artist-name"
+              name="artist"
+              placeholder="Artist name..."
+              required
+            />
+            <label for="genres">Pick a genre:</label>
+            <select name="genres" id="genre" required>
+              <option value="pop">Pop</option>
+              <option value="rock">Rock</option>
+              <option value="classical">Classical</option>
+              <option value="hip-hop">Hip Hop</option>
+              <option value="RnB">RnB</option>
+              <option value="folk">Folk</option>
+              <option value="musical-theatre">Musical Theatre</option>
+              <option value="other">other</option>
+            </select>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
     <footer></footer>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
