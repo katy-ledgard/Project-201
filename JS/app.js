@@ -7,12 +7,18 @@ document.getElementById("greenButton").addEventListener("click", chooseGreenThem
 
 document.getElementById("purpleButton").addEventListener("click", choosePurpleTheme);
 
+let header = document.getElementById("header");
+let footer = document.getElementById("footer");
+let bio = document.getElementById("bio");
+let allButtons = document.querySelector("button");
+// let allButtons2 = document.getElementById("submit");
+
 let theme = "default";
 
 function chooseDefaultTheme() {
-  let header = document.getElementById("header");
-  let footer = document.getElementById("footer");
-  let bio = document.getElementById("bio");
+  // let header = document.getElementById("header");
+  // let footer = document.getElementById("footer");
+  // let bio = document.getElementById("bio");
   let button = document.getElementById("defaultButton");
   header.classList.remove("green");
   header.classList.remove("purple");
@@ -26,6 +32,19 @@ function chooseDefaultTheme() {
     bio.classList.remove("purple");
     bio.classList.add("default");
   }
+
+  if (allButtons) {
+    allButtons.classList.remove("green");
+    allButtons.classList.remove("purple");
+    allButtons.classList.add("default");
+  }
+
+  // if (allButtons2) {
+  //   allButtons.classList.remove("green");
+  //   allButtons.classList.remove("purple");
+  //   allButtons.classList.add("default");
+  // }
+
  if (button) {
   button.setAttribute("checked", "checked");
  }
@@ -34,9 +53,9 @@ function chooseDefaultTheme() {
 }
 
 function chooseGreenTheme() {
-  let header = document.getElementById("header");
-  let footer = document.getElementById("footer");
-  let bio = document.getElementById("bio");
+  // let header = document.getElementById("header");
+  // let footer = document.getElementById("footer");
+  // let bio = document.getElementById("bio");
   let button = document.getElementById("greenButton");
   header.classList.remove("default");
   header.classList.remove("purple");
@@ -50,6 +69,17 @@ function chooseGreenTheme() {
   bio.classList.remove("purple");
   bio.classList.add("green");
   }
+
+  if (allButtons) {
+    allButtons.classList.remove("default");
+    allButtons.classList.remove("purple");
+    allButtons.classList.add("green");
+    }
+    // if (allButtons2) {
+    //   allButtons.classList.remove("default");
+    //   allButtons.classList.remove("purple");
+    //   allButtons.classList.add("green");
+    //   }  
     
  if (button) {
   button.setAttribute("checked", "checked");
@@ -59,9 +89,9 @@ function chooseGreenTheme() {
 }
 
 function choosePurpleTheme() {
-  let header = document.getElementById("header");
-  let footer = document.getElementById("footer");
-  let bio = document.getElementById("bio");
+  // let header = document.getElementById("header");
+  // let footer = document.getElementById("footer");
+  // let bio = document.getElementById("bio");
   let button = document.getElementById("purpleButton");
   header.classList.remove("green");
   header.classList.remove("default");
@@ -73,7 +103,18 @@ function choosePurpleTheme() {
   bio.classList.remove("green");
   bio.classList.remove("default");
   bio.classList.add("purple");
-  }  
+  } 
+  if (allButtons) {
+    allButtons.classList.remove("green");
+    allButtons.classList.remove("default");
+    allButtons.classList.add("purple");
+    }   
+    // if (allButtons2) {
+    //   allButtons.classList.remove("green");
+    //   allButtons.classList.remove("default");
+    //   allButtons.classList.add("purple");
+    //   }   
+
  if (button) {
   button.setAttribute("checked", "checked");
  }

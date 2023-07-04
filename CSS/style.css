@@ -1,3 +1,6 @@
+/* font-family: 'Klee One', cursive;
+font-family: 'Petit Formal Script', cursive,; */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +8,9 @@
 }
 
 :root {
-    --background-color: #EED2CC ;
+    --default: #EED2CC ;
+    --green: rgb(163, 211, 179);
+    --purple: rgb(203, 180, 215);
 }
 
 img {
@@ -14,33 +19,83 @@ img {
 
 h1 {
     color: black;
+    font-family: 'Petit Formal Script', cursive, sans-serif;
+    font-size: 2.75em;
+    text-align: center;
+    padding: .75em;
+}
+
+h2, h3 {
+    font-family: 'Klee One', cursive, sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Klee One', cursive, sans-serif;
+}
+
+label, fieldset {
+    font-family: 'Klee One', cursive, sans-serif;
+    
 }
 
 header {
-    background-color: var(--background-color);
+    background-color: var(--default);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding: 0 .5em .5em .5em;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Klee One', cursive, sans-serif;
+}
+
+li a:visited {
+    color:#000000;
+    text-decoration: none;
+}
 footer {
-    background-color: var(--background-color);
+    background-color: var(--default);
     width: 100%;
     min-height: 100px;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
+/* hero section */
+
 .hero-section {
-    max-height: 600px;
     padding: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 40px;
+    /* max-height: 600px; */
+    /* padding: 20px;
+    margin: 0 auto;
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px; */
     /* border: 1px solid black; */
 }
 
@@ -50,20 +105,28 @@ footer {
     object-fit: cover;
 }
 
-.hero-text {
-    width: 80%;
-  }
-  
+ 
   .hero-text h2 {
-    font-size: 3.3rem;
-    margin-bottom: 12px;
+    font-size: 3rem;
+    margin-bottom: 0 auto;
     color: #000000;
+    text-align: center;
+    font-family: 'Klee One', cursive, sans-serif;
+    font-weight: bold;
   }
   
   .hero-text p {
+    width: 80%;
     font-size: 1.4rem;
-    margin-bottom: 12px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Klee One', cursive, sans-serif;
+    padding-top: .8em;
   }
+
+
+
+/* bio section */
 
 #bio {
     width: 95%;
@@ -91,11 +154,60 @@ footer {
 
 .choose-theme2 input, label {
     padding: .5em;
+    font-weight: none;
 }
 
+
+/* spotlight section */
+
 .spotlight {
+    
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    /* border: 1px solid black; */
+}
+
+.spotlight img {
+    width: 100%;
+    max-height: 500px;
+    object-fit:cover;
+    object-position: 50% 50%;
+}
+
+.spotlight-text {
     width: 95%;
 }
+
+.spotlight h2 {
+    font-size: 2em;
+}
+ 
+  .spotlight-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    color: #000000;
+    text-align: center;
+    font-family: 'Klee One', cursive, sans-serif;
+    font-weight: bold;
+  }
+  
+  .spotlight-text p {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    text-align: center;
+    font-family: 'Klee One', cursive, sans-serif;
+    font-size: .92em;
+    line-height: 1.2;
+  }
+
+
+
+/* links section */
 
 .links-section {
     display:flex;
@@ -143,6 +255,17 @@ footer {
 
 
 /* Generator page */
+
+button {
+    background-color: var(--default);
+    font-family: 'Klee One', cursive, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    padding: .5em .85em .75em .85em;
+    border-radius: 5px;
+    border: none;
+    box-shadow:0px 0px 10px 1px #636363;
+}
  
 #songGenerator {
     display: flex;
@@ -186,6 +309,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: bold;
 }
 
 .addSong {
@@ -208,25 +332,26 @@ hr {
 }
 
 .default {
-    background-color: var(--background-color);
+    background-color: var(--default);
 }
 
 .green {
-background-color:rgb(137, 197, 137);
+background-color:rgb(163, 211, 179);
 }
 
 .purple {
-    background-color: rgb(178, 144, 178);
+    background-color: rgb(203, 180, 215);
 }
 
-@media (max-width: 884px) {
+/* @media (max-width: 884px) {
     .hero-section {
       margin-top: 10px;
       flex-direction: column-reverse;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    .hero-text {
+      /* margin-left: 10px;
+      margin-right: 10px; 
+    }*/
+    
+    /* .hero-text {
       width: 100%;
       text-align: center;
     }
@@ -244,4 +369,4 @@ background-color:rgb(137, 197, 137);
     hr {
         width: 100%;
     }
-  }
+  } */ 

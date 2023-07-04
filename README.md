@@ -13,3 +13,4 @@
 - Photo by Amar  Preciado: https://www.pexels.com/photo/a-wedding-venue-12954021/
 - Photo by Jeremy Wong: https://www.pexels.com/photo/4-tier-cake-on-cake-stand-1038711/
 - Photo by Trung Nguyen: https://www.pexels.com/photo/bridge-and-groom-standing-while-holding-flower-bouquet-2959192/
+- Photo by Joel Paim: https://www.pexels.com/photo/photo-of-wedding-setup-2291462/
