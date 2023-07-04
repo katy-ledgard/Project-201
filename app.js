@@ -48,68 +48,43 @@ const KissTheRain = new Song("Kiss the Rain", "Yiruma", "classical");
 const MissAThing = new Song("I Don't Wanna Miss a Thing", "Aerosmith", "rock");
 const AllIAskOfYou = new Song("All I Ask of You", "The Phantom of the Opera", "musical-theatre");
 
-const songButton = document.getElementById("randomSong").addEventListener("click", function(){
-  let song = getRandomSong(); 
-  
-    while (
-      usedSongs.includes(song)
-          ) {
-      
-      song = getRandomSong();
-    }
-
-    song.renderSong();
-
-  
-});
-
-// atLast.renderSong();
-
 // 4. Create function to handle randomiser button:
 // Create a button for the user to click to generate a song.
 //  Add an event listener to the button to listen for clicks and to then randomise and display the song.
 
 
+const songButton = document.getElementById("randomSong").addEventListener("click", HandleClick);
 
-// function renderSong() {
-//    let song1 = getRandomSong(); 
-  
-//     while (
-//       usedSongs.includes(song1)
-//           ) {
+function HandleClick() {
+  songContainer.innerHTML = "";
+  let songNumber = getRandomSong(); 
+  let song = allSongs[songNumber]
+
+
+  // console.log(song);
+
+    while (
+      usedSongs.includes(songNumber)
+          ) {
       
-//       song1 = getRandomSong();
-//     }
+      songNumber = getRandomSong();
+    }
 
-//   renderResult()
-//   }
 
-  //   const image = document.createElement("img");
-  //   image.setAttribute("src", imageUrl);
-  //   image.setAttribute("alt", `An image interpretation of ${genre} music`);
-  //   songContainer.appendChild(image);
-
-  //   const h3 = document.createElement("h3");
-  //   h3.textContent = "Your First Dance song is:"
-  //   songContainer.appendChild(h3);
-
-  //   const p = document.createElement("p");
-  //   p.textContent = `${songName} by ${artist}.`
-  //   songContainer.appendChild(p);
-
-  
-  //   usedSongs = [];
-  //   usedSongs.push(song1);
-  //   console.log(usedSongs);
-  // }
-
-//  function handleClick() {
-//     songButton.addEventListener("click", renderSong);
+  usedSongs = [];
+  usedSongs.push(songNumber);
+  // console.log(usedSongs);
+  // console.log(song);
+   
+    song.renderSong();
     
-// }
 
-console.log(allSongs);
-// console.log(usedSongs);
-// Song.prototype.generateSong(){
   
-// handleClick();
+};
+
+
+
+
+
+
+// console.log(allSongs);
