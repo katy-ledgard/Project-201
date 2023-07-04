@@ -49,6 +49,17 @@ const MissAThing = new Song("I Don't Wanna Miss a Thing", "Aerosmith", "rock");
 const AllIAskOfYou = new Song("All I Ask of You", "The Phantom of the Opera", "musical-theatre");
 
 const songButton = document.getElementById("randomSong").addEventListener("click", function(){
+  let song = getRandomSong(); 
+  
+    while (
+      usedSongs.includes(song)
+          ) {
+      
+      song = getRandomSong();
+    }
+
+    song.renderSong();
+
   
 });
 
