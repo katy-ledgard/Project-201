@@ -8,20 +8,32 @@
       name="description"
       content="Wedding inspiration and wedding random generators"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <header></header>
-    <main>
+    <header id="header">
+      <h1>TITLE</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="generators.html">Random Generator</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+    <main class="container">
       <section id="songGenerator">
-        <h2>First Dance Random Generator.</h2>
+        <h2>First Dance Song Random Generator.</h2>
       </section>
-      <section>
+      <section class="randomButton">
         <button id="randomSong">Get Song.</button>
       </section>
+      <hr>
       <section>
         <form id="songForm">
-          <fieldset>
+          <fieldset class="addSong">
             <legend>Add a Song</legend>
             <label for="song-name">Song Title:</label>
             <input
@@ -56,6 +68,7 @@
       </section>
     </main>
     <footer></footer>
-    <script src="app.js"></script>
+    <script src="JS/app.js"></script>
+    <script src="JS/app2.js"></script>
   </body>
 </html>

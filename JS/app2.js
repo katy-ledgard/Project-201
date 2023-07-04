@@ -33,7 +33,7 @@ Song.prototype.renderSong = function () {
   songContainer.appendChild(image);
 
   const h3 = document.createElement("h3");
-  h3.textContent = "Your First Dance song is:";
+  h3.textContent = "Your 'First Dance' song is:";
   songContainer.appendChild(h3);
 
   const p = document.createElement("p");

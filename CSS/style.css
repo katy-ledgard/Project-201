@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -111,6 +112,72 @@ footer {
 
 }
 
+
+/* Generator page */
+ 
+#songGenerator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+#songGenerator img {
+    max-width: 500px;
+    padding: 1rem;
+}
+
+#songGenerator h2 {
+    font-size: 2.5em;
+    margin: .5em auto;
+    text-align: center;
+}
+
+#songGenerator h3 {
+    font-size: 2em;
+    margin: .5em auto;
+    text-align: center;
+}
+
+#songGenerator p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.randomButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#songForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addSong {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 1rem 3rem; 
+    border: 1px solid black; 
+    margin: 1em auto;
+    text-align: center;
+}
+
+.addSong input, label, select {
+    margin-bottom: .75em;
+}
+
+hr {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .default {
     background-color: var(--background-color);
 }
@@ -141,5 +208,9 @@ background-color:rgb(137, 197, 137);
   @media (max-width: 678px) {
     .hero-text h1 {
       font-size: 2rem;
+    }
+
+    hr {
+        width: 100%;
     }
   }
