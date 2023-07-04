@@ -68,7 +68,7 @@ footer {
 #bio {
     width: 95%;
     margin: 20px auto;
-    height: 200px;
+    min-height: 200px;
         
 }
 
@@ -100,12 +100,29 @@ footer {
     border: 1px solid black;
     min-width: 200px;
     max-width: 350px;
-    margin: 0 auto;
+    margin: auto;
     padding: 5px;
     flex-shrink: 0;
-       
+    position: relative;
+    text-align: center;
+          
 }
 
+.link-card a {
+    text-decoration: none;
+    color:#000000;
+
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+
+}
 
 .link-card img{
     max-width: 350px;
