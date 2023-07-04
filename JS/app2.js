@@ -63,14 +63,19 @@ function HandleClick() {
   songContainer.innerHTML = "";
   let songNumber = getRandomSong();
   let song = allSongs[songNumber];
+    // console.log(song);
 
-  // console.log(song);
-
+if (usedSongs.length == allSongs.length) {
+  usedSongs = [];
+} else {
   while (usedSongs.includes(songNumber)) {
     songNumber = getRandomSong();
-  }
+    song =  allSongs[songNumber];
 
-  usedSongs = [];
+
+  }
+}
+  
   usedSongs.push(songNumber);
   // console.log(usedSongs);
   // console.log(song);

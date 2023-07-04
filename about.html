@@ -9,9 +9,56 @@
     <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header id="header">
+        <h1>TITLE</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="generators.html">Random Generator</a></li>
+          </ul>
+        </nav>
+        
+      </header>
+    <main>
+        
+        <section class="choose-theme2">
+            <form>
+    <label for="default">
+      <input
+        type="radio"
+        name="theme"
+        id="defaultButton"
+        class="theme"
+        value="default"
+        checked
+      />
+      <span>Default Theme</span>
+    </label>
+    <label for="green">
+      <input
+        type="radio"
+        name="theme"
+        id="greenButton"
+        class="theme"
+        value="green"
+      />
+      <span>Green Theme</span>
+    </label>
+    <label for="purple">
+      <input
+        type="radio"
+        name="theme"
+        id="purpleButton"
+        class="theme"
+        value="purple"
+      />
+      <span>Purple Theme</span>
+    </label>
+  </form>
+</section>
+    </main>
+    <footer id="footer"></footer>
     <script src="JS/app.js"></script>
 </body>
 </html>
