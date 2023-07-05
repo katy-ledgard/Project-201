@@ -10,11 +10,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Petit+Formal+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/generator.css">
 </head>
 <body>
   <header id="header">
-    <a href="index.html"><h1>The Wedding<br>Guidebook</h1></a>
+   <a href="index.html"> <h1>The Wedding<br>Guidebook</h1></a>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -62,60 +61,15 @@
   </form>
 </section>
 
-<div class="container">
-    <section id="themeGenerator">
-      <h2>Wedding Theme Random Generator.</h2>
-      <h3></h3>
-      <img src="" alt="">
-      <p></p>
-    </section>
-
-    <section class="themeBtn">
-      <button class="btnAnimate" id="randomTheme">Get Theme.</button>
-    </section>
-
-    <hr>
-
-    <form id="themeForm">
-        <fieldset class="addTheme">
-          <legend>Add a Song</legend>
-          <label for="theme-name">Theme Title:</label>
-          <input
-            type="text"
-            id="theme-name"
-            name="themeName"
-            placeholder="Theme Title..."
-            required
-          />
-          <label for="themeAbout">Quote to accompany theme:</label>
-          <input
-            type="text"
-            id="themeAbout"
-            name="about"
-            placeholder="Theme quote..."
-            required
-          />
-
-          <label for="imgURL">Image url:</label>
-          <input
-            type="url"
-            id="imgURL"
-            name="imageURL"
-            placeholder="Paste image url"
-            
-          />
-          
-          <button class="btnAnimate" type="submit" id="submit">Submit</button>
-        </fieldset>
-      </form>
-    </section>
+<section class="generatorsPage">
+    <h2><a href="song.html">'First Dance' Generator</a></h2>
+    <h2><a href="theme.html">Wedding Theme Generator</a></h2>
+</section>
 
     </main>
     <footer id="footer">
       <p>&copy; The Wedding Guidebook | 2023</p>
     </footer>
     <script src="JS/app.js"></script>
-    <script src="JS/theme.js"></script>
 </body>
 </html>
-
