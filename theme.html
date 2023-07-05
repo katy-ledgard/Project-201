@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding Guidebook</title>
+    <meta name="description" content="The About Us page for a Wedding inspiration site.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/generator.css">
+</head>
+<body>
+  <header id="header">
+    <h1>The Wedding<br>Guidebook</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="generators.html">Random Generator</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+    <main>
+        
+        <section class="choose-theme2">
+            <form>
+    <label>
+      <input
+        type="radio"
+        name="theme"
+        id="defaultButton"
+        class="theme"
+        value="default"
+        checked
+      />
+      <span>Default Theme</span>
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="theme"
+        id="greenButton"
+        class="theme"
+        value="green"
+      />
+      <span>Green Theme</span>
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="theme"
+        id="purpleButton"
+        class="theme"
+        value="purple"
+      />
+      <span>Purple Theme</span>
+    </label>
+  </form>
+</section>
+
+<div class="container">
+    <section id="themeGenerator">
+      <h2>Wedding Theme Random Generator.</h2>
+      <h3></h3>
+      <img src="" alt="">
+      <p></p>
+    </section>
+
+    <section class="themeBtn">
+      <button class="btnAnimate" id="randomTheme">Get Theme.</button>
+    </section>
+
+    <form id="themeForm">
+        <fieldset class="addTheme">
+          <legend>Add a Song</legend>
+          <label for="theme-name">Theme Title:</label>
+          <input
+            type="text"
+            id="theme-name"
+            name="themeName"
+            placeholder="Theme Title..."
+            required
+          />
+          <label for="themeAbout">Quote to accompany theme:</label>
+          <input
+            type="text"
+            id="themeAbout"
+            name="about"
+            placeholder="Theme quote..."
+            required
+          />
+
+          <label for="imgURL">Image url:</label>
+          <input
+            type="url"
+            id="imgURL"
+            name="imageURL"
+            placeholder="Paste image url"
+            
+          />
+          
+          <button class="btnAnimate" type="submit" id="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+
+    </main>
+    <footer id="footer">
+      <p>&copy; The Wedding Guidebook | 2023</p>
+    </footer>
+    <script src="JS/app.js"></script>
+    <script src="JS/theme.js"></script>
+</body>
+</html>
+
