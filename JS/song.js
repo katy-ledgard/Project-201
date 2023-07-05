@@ -27,16 +27,16 @@ function getRandomSong() {
 //3. Create a render function to display the song details and image.
 
 Song.prototype.renderSong = function () {
-  const image = document.createElement("img");
+  const image = document.querySelector("img");
   image.setAttribute("src", this.imageUrl);
   image.setAttribute("alt", `An image interpretation of ${this.genre} music`);
   songContainer.appendChild(image);
 
-  const h3 = document.createElement("h3");
+  const h3 = document.querySelector("h3");
   h3.textContent = "Your 'First Dance' song is:";
   songContainer.appendChild(h3);
 
-  const p = document.createElement("p");
+  const p = document.querySelector("p");
   p.textContent = `${this.songName} by ${this.artist}.`;
   songContainer.appendChild(p);
 };
@@ -60,7 +60,7 @@ const songButton = document
   .addEventListener("click", HandleClick);
 
 function HandleClick() {
-  songContainer.innerHTML = "";
+  // songContainer.innerHTML = "";
   let songNumber = getRandomSong();
   let song = allSongs[songNumber];
     // console.log(song);
