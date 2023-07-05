@@ -13,6 +13,14 @@ font-family: 'Petit Formal Script', cursive,; */
   --purple: rgb(203, 180, 215);
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
 img {
   width: 100%;
 }
@@ -158,14 +166,15 @@ label {
 /* spotlight section */
 
 .spotlight {
-  padding: 20px;
-  margin: 0 auto;
+  padding: 1em;
+  margin: 0 auto 1em auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  /* border: 1px solid black; */
+  border: 1px solid black;
+  max-width: 1100px;
 }
 
 .spotlight img {
@@ -194,13 +203,20 @@ label {
 }
 
 .spotlight-text p {
-  margin: 0 auto;
-  margin-bottom: 12px;
+  margin: 0 auto 12px auto;
   text-align: center;
   font-family: "Klee One", cursive, sans-serif;
   font-size: 0.92em;
   line-height: 1.2;
   max-width: 1000px;
+  padding-bottom: 1em;
+}
+.spotlight a {
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid black;
+    padding: .5em;
+    margin-top: 1em;
 }
 
 /* links section */
@@ -322,6 +338,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: auto;
 }
 
 /* Classes */
