@@ -40,10 +40,11 @@ Theme.prototype.renderTheme = function () {
   themeContainer.appendChild(p);
 };
 
-const LOTR = new Theme("The Lord of the Rings", "Will you take the one ring and say I do?", "https://place-hold.it/300x300/ddd");
-const HP = new Theme("Harry Potter", "Harry Potter - the boy who lived, comes to get married?", "https://place-hold.it/300x300/ddd");
-const beach = new Theme("Beach Wedding", "Who doesn't want to get married by the sea?", "https://place-hold.it/300x300/ddd");
-const vegas = new Theme("Vegas Wedding", "VEGAS, BABY!", "https://place-hold.it/300x300/ddd");
+const LOTR = new Theme("The Lord of the Rings", "One ring to show our love, One ring to bind us, One ring to seal our love, And forever to entwine us.", "assets/lotr.jpg");
+const HP = new Theme("Harry Potter", "Harry Potter - the boy who lived, comes to get married.", "assets/hp.jpg");
+const beach = new Theme("Beach Wedding", "Oh I do like to wed beside the seaside.", "assets/beach.jpg");
+const vegas = new Theme("Vegas Wedding", "VEGAS, BABY!", "assets/vegas.jpg");
+const winter = new Theme("Winter Wonderland Wedding", "Oh the weather outside is frightful, but this wedding is so delightful.", "assets/winter.jpg");
 
 // console.log(LOTR);
 

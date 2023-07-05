@@ -35,3 +35,10 @@ Finally, she would like the user to have a selection of three colour schemes to 
 - Photo by Jeremy Wong: https://www.pexels.com/photo/4-tier-cake-on-cake-stand-1038711/
 - Photo by Trung Nguyen: https://www.pexels.com/photo/bridge-and-groom-standing-while-holding-flower-bouquet-2959192/
 - Photo by Joel Paim: https://www.pexels.com/photo/photo-of-wedding-setup-2291462/
+- Photo by Amar  Preciado: https://www.pexels.com/photo/a-newlywed-couple-dancing-10360896/
+- Photo by Photography Maghradze PH: https://www.pexels.com/photo/newlyweds-posing-in-snow-10924994/
+- Photo by <a href="https://unsplash.com/@ergo_zakki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ergo Zakki</a> on <a href="https://unsplash.com/photos/QjLE11j5FT8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by RDNE Stock project: https://www.pexels.com/photo/an-old-book-and-candles-on-wooden-table-with-glass-bottles-7978061/
+- Photo by Key  Notez: https://www.pexels.com/photo/man-and-woman-getting-married-on-the-beach-12178593/
+- Photo by Erik Mclean: https://www.pexels.com/photo/close-up-of-a-wedding-decoration-9738252/
+- 
