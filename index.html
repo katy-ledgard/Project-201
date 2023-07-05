@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Wedding Guidebook</title>
     <meta name="description" content="A page filled with Wedding inspiration" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
     <main>
       <section class="hero-section">
         
-        <img src="assets/hero.jpg" alt="a bouquet in a bride and groom's hands">
+        <img src="assets/hero-lg.jpg" alt="a bouquet in a bride and groom's hands">
         
         <div class="hero-text">
           <h2>Plan your perfect wedding!</h2>
@@ -43,7 +43,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id quas dolore fuga veniam expedita deserunt doloribus minus impedit! Optio sequi numquam recusandae saepe temporibus molestias quia assumenda esse quas.</p>
         <section class="choose-theme">
           <form>
-            <label for="default">
+            <label>
               <input
                 type="radio"
                 name="theme"
@@ -54,7 +54,7 @@
               />
               <span>Default Theme</span>
             </label>
-            <label for="green">
+            <label>
               <input
                 type="radio"
                 name="theme"
@@ -64,7 +64,7 @@
               />
               <span>Green Theme</span>
             </label>
-            <label for="purple">
+            <label>
               <input
                 type="radio"
                 name="theme"
@@ -77,9 +77,9 @@
           </form>
         </section>
       </section>
-      <article class="spotlight">
-           <h2>Spotlight</h2>   
-          <img src="assets/barn.jpg" alt="a bouquet in a bride and groom's hands">
+      <section class="spotlight">
+           <h2>This week's Spotlight</h2>   
+          <img src="assets/barn-lg.jpg" alt="a bouquet in a bride and groom's hands">
           <div class="spotlight-text">
             <h3>Barn weddings</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus corrupti ipsa aut doloremque blanditiis suscipit nesciunt aliquam eius, sit magni architecto nam deserunt optio consequatur consectetur repudiandae tempore cupiditate mollitia! Sed rerum fugiat quae, eaque saepe sit quo sunt unde repellat commodi fuga, error nobis quia voluptates voluptatum odio laudantium.
@@ -89,7 +89,7 @@
         
         
 
-      </article>
+      </section>
       <section class="links-section">
         <div class="link-card">
           <a href="#">  
@@ -109,9 +109,30 @@
         </div>
       </section>
 
+        <section class="contactForm">
+        <form id="contact">
+          <fieldset>
+            <legend>Contact Us</legend>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus corrupti maiores iure voluptatum asperiores, cumque impedit! Facere beatae praesentium voluptate!</p>
+            <label>Name: 
+              <input type="text" id="userName" name="userName" placeholder="Name..." required>
+            </label>
+            <label>Email: 
+              <input type="email" id="userEmail" name="userEmail" placeholder="Email..." required>
+            </label>
+            <label>Message:
+              <textarea id="userMessage" name="userMessage"  rows="10" cols="40" placeholder="Start typing..." required></textarea>
+            </label>
+            <button class="btnAnimate" type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+
     </div>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+      <p>&copy; The Wedding Guidebook | 2023</p>
+    </footer>
       <script src="JS/app.js"></script>
       
       

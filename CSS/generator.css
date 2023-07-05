@@ -1,0 +1,69 @@
+
+ 
+#songGenerator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+#songGenerator img {
+    max-width: 500px;
+    padding: 1rem;
+}
+
+#songGenerator h2 {
+    font-size: 2.5em;
+    margin: .5em auto;
+    text-align: center;
+}
+
+#songGenerator h3 {
+    font-size: 2em;
+    margin: .5em auto;
+    text-align: center;
+}
+
+#songGenerator p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.randomButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#songForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.addSong {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 1rem 3rem; 
+    border: 1px solid black; 
+    margin: 1em auto;
+    text-align: center;
+}
+
+.addSong input, label, select {
+    margin-bottom: .75em;
+}
+
+.addSong input {
+    font-family: monospace, 'Klee One', cursive, sans-serif;
+}
+
+hr {
+    width: 50%;
+    margin: 0 auto;
+}

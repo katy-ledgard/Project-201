@@ -6,17 +6,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Petit+Formal+Script&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>The Wedding Guidebook</title>
     <meta
       name="description"
       content="Wedding inspiration and wedding random generators"
     />
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/generator.css">
   </head>
   <body>
     <header id="header">
-      <h1>TITLE</h1>
+      <h1>The Wedding<br>Guidebook</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -30,7 +31,7 @@
       
         <section class="choose-theme2">
                     <form>
-            <label for="default">
+            <label>
               <input
                 type="radio"
                 name="theme"
@@ -41,7 +42,7 @@
               />
               <span>Default Theme</span>
             </label>
-            <label for="green">
+            <label>
               <input
                 type="radio"
                 name="theme"
@@ -51,7 +52,7 @@
               />
               <span>Green Theme</span>
             </label>
-            <label for="purple">
+            <label>
               <input
                 type="radio"
                 name="theme"
@@ -69,7 +70,7 @@
         <h2>First Dance Song Random Generator.</h2>
       </section>
       <section class="randomButton">
-        <button id="randomSong">Get Song.</button>
+        <button class="btnAnimate" id="randomSong">Get Song.</button>
       </section>
       <hr>
       <section>
@@ -103,13 +104,16 @@
               <option value="musical-theatre">Musical Theatre</option>
               <option value="other">other</option>
             </select>
-            <button type="submit" id="submit">Submit</button>
+            <button class="btnAnimate" type="submit" id="submit">Submit</button>
           </fieldset>
         </form>
       </section>
+      
     </div>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+      <p>&copy; The Wedding Guidebook | 2023</p>
+    </footer>
     <script src="JS/app.js"></script>
     <script src="JS/app2.js"></script>
   </body>
