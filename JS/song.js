@@ -45,11 +45,13 @@ const atLast = new Song("At Last", "Etta James", "RnB");
 const thinkingOutLoud = new Song("Thinking Out Loud", "Ed Sheeran", "pop");
 const KissTheRain = new Song("Kiss the Rain", "Yiruma", "classical");
 const MissAThing = new Song("I Don't Wanna Miss a Thing", "Aerosmith", "rock");
-const AllIAskOfYou = new Song(
-  "All I Ask of You",
-  "The Phantom of the Opera",
-  "musical-theatre"
-);
+const AllIAskOfYou = new Song("All I Ask of You", "The Phantom of the Opera","musical-theatre");
+const fiveHrd = new Song("I'm Gonna Be (500 Miles) - cover", "Sleeping At Last", "pop");
+const coverYou = new Song("I'll Cover You", "Rent", "musical-theatre");
+const AllMyLife = new Song("All My Life", "K-Ci & JoJo", "RnB");
+const Brud = new Song("Brudevalsen", "Niels W. Gade", "classical");
+const Something = new Song("Something", "The Beatles", "rock");
+
 
 // 4. Create function to handle randomiser button:
 // Create a button for the user to click to generate a song.
@@ -102,4 +104,29 @@ const newSong = new Song(songName, artist, genres);
 console.log(newSong);
 
 songForm.reset();
+
 });
+
+// function saveSong() {
+//   let getSong = JSON.stringify(newSong);
+//   localStorage.setItem("newSong", getSong);
+// }
+// saveSong();
+
+// function loadSong() {
+//   let storedSong = JSON.parse(localStorage.getItem("newSong"));
+
+//   if (storedSong === null) {
+//     console.log("nothing here");
+//     return;
+//   }
+
+//   if (storedSong == "newSong") {
+//     // console.log("default");
+//     allSongs.push(newSong);
+//   }
+
+// };
+
+// loadSong();
+
