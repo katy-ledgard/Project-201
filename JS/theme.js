@@ -97,6 +97,25 @@ themeForm.addEventListener("submit", function(event){
 
 const newTheme = new Theme(themeName, about, imageURL);
 console.log(newTheme);
+saveTheme();
 
 themeForm.reset();
 });
+
+function saveTheme() {
+  localStorage.setItem("newTheme", JSON.stringify(allThemes));
+};
+
+function loadTheme(){
+  let storedTheme = JSON.parse(localStorage.getItem("newTheme"));
+
+  if (storedTheme) {
+    allThemes = [];
+  for (let i = 0; i < storedTheme.length; i++) {
+    new Theme(storedTheme[i].themeName, storedTheme[i].about, storedTheme[i].imageUrl);
+  }
+
+  }
+};
+
+loadTheme();

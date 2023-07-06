@@ -11,6 +11,8 @@
 
 #songGenerator, #themeGenerator img {
     max-width: 500px;
+    max-height: 334px;
+    object-fit: cover;
     padding: 1rem;
 }
 

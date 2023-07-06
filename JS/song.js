@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 console.log("Hello");
 
 const songContainer = document.getElementById("songGenerator");
@@ -6,6 +6,8 @@ const songForm = document.getElementById("songForm");
 
 let allSongs = [];
 let usedSongs = [];
+// let newSong
+// let userSong = [];
 
 // As a user, I would like a random generator page where I can get wedding song ideas. I would like to know the name of the song, the artist and the style of music.
 // 1. Create a constructor function for wedding songs; using the key:value pairs for a name, the artist and the genre of music.
@@ -45,13 +47,20 @@ const atLast = new Song("At Last", "Etta James", "RnB");
 const thinkingOutLoud = new Song("Thinking Out Loud", "Ed Sheeran", "pop");
 const KissTheRain = new Song("Kiss the Rain", "Yiruma", "classical");
 const MissAThing = new Song("I Don't Wanna Miss a Thing", "Aerosmith", "rock");
-const AllIAskOfYou = new Song("All I Ask of You", "The Phantom of the Opera","musical-theatre");
-const fiveHrd = new Song("I'm Gonna Be (500 Miles) - cover", "Sleeping At Last", "pop");
+const AllIAskOfYou = new Song(
+  "All I Ask of You",
+  "The Phantom of the Opera",
+  "musical-theatre"
+);
+const fiveHrd = new Song(
+  "I'm Gonna Be (500 Miles) - cover",
+  "Sleeping At Last",
+  "pop"
+);
 const coverYou = new Song("I'll Cover You", "Rent", "musical-theatre");
 const AllMyLife = new Song("All My Life", "K-Ci & JoJo", "RnB");
 const Brud = new Song("Brudevalsen", "Niels W. Gade", "classical");
 const Something = new Song("Something", "The Beatles", "rock");
-
 
 // 4. Create function to handle randomiser button:
 // Create a button for the user to click to generate a song.
@@ -65,19 +74,17 @@ function HandleClick() {
   // songContainer.innerHTML = "";
   let songNumber = getRandomSong();
   let song = allSongs[songNumber];
-    // console.log(song);
+  // console.log(song);
 
-if (usedSongs.length == allSongs.length) {
-  usedSongs = [];
-} else {
-  while (usedSongs.includes(songNumber)) {
-    songNumber = getRandomSong();
-    song =  allSongs[songNumber];
-
-
+  if (usedSongs.length == allSongs.length) {
+    usedSongs = [];
+  } else {
+    while (usedSongs.includes(songNumber)) {
+      songNumber = getRandomSong();
+      song = allSongs[songNumber];
+    }
   }
-}
-  
+
   usedSongs.push(songNumber);
   // console.log(usedSongs);
   // console.log(song);
@@ -87,61 +94,40 @@ if (usedSongs.length == allSongs.length) {
 
 // console.log(allSongs);
 
-
 // 3. Add an Event Listener which adds the form content as a new object.
 //4. Declare variables to get form values.
 //5. Use form values to create new Song object.
 //6. Reset Form.
 
-songForm.addEventListener("submit", function(event){
+songForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const songName = event.target.songName.value;
   const artist = event.target.artist.value;
   const genres = event.target.genres.value;
 
-const newSong = new Song(songName, artist, genres);
-console.log(newSong);
-saveSong();
+  const newSong = new Song(songName, artist, genres);
+  console.log(newSong);
+  saveSong(newSong);
 
-songForm.reset();
-
+  songForm.reset();
 });
 
 function saveSong() {
   localStorage.setItem("newSong", JSON.stringify(allSongs));
- 
+};
+
+function loadSong() {
+  let storedSong = JSON.parse(localStorage.getItem("newSong"));
+// console.log(storedSong);
+if (storedSong) {
+  allSongs = [];
+  for (let i = 0; i < storedSong.length; i++) {
+    new Song(storedSong[i].songName, storedSong[i].artist, storedSong[i].genre)
+  }
 }
+  
+};
 
-// function loadSong() {
-//   JSON.parse(localStorage.getItem(allSongs));
-// }
-
-// loadSong();
-
-// function loadSong() {
-//   let storedSong = localStorage.getItem(allSongs);
-//   // const songs = JSON.parse(storedSong);
-
-//   let allSongs = JSON.parse(localStorage.getItem(storedSong));
-
-// }
-
-// loadSong();
-
-//   if (songs === null) {
-//     // console.log("nothing here");
-//     return;
-//   }
-
-//   if (songs) {
-//     for (let i=0; i < songs.length; i++) {
-//       const song = songs[i]
-//     }
-//   }
-//   }
-
-// };
-
-
+loadSong();
 
