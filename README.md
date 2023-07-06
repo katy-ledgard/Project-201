@@ -2,7 +2,11 @@
 
 ## The Wedding Guidebook
 
-description
+This project is a website that contains content for people who are planning their wedding. It has an index page which introduces the site, has some wedding inspired content and a contact form. This site is also designed to add some lighthearted fun, so it has some random generators that will suggest first dance songs and wedding themes. Both generators will have a form so that users can submit their own ideas for the generators, which are then added to their Local Storage. Users will also be able to change the colour scheme from a selection of options, which is also stored to Local Storage.
+
+### Team Members
+
+Individual Project.
 
 ### Problem Domain
 
@@ -12,7 +16,7 @@ For the index page, they would like a brief introduction to the site. They would
 
 For the About Us page, they would like information on what the website is used for.
 
-They also want a page that will add a little fun to the site, which includes a random generator and a space for users to upload their ideas to be included in the generator. When using the generator, they does not want the same result to be given immediately after.
+They also want a page that will add a little fun to the site, which includes a random generator and a space for users to upload their ideas to be included in the generator. When using the generator, they do not want the same result to be given immediately after.
 
 Finally, they would like the user to have a selection of three colour schemes to choose from for the website which will change the colour theme of the website. They wants this to work across the pages and to remain the next time they return to the site.
 

@@ -7,9 +7,6 @@ const songForm = document.getElementById("songForm");
 let allSongs = [];
 let usedSongs = [];
 
-// As a user, I would like a random generator page where I can get wedding song ideas. I would like to know the name of the song, the artist and the style of music.
-// 1. Create a constructor function for wedding songs; using the key:value pairs for a name, the artist and the genre of music.
-
 function Song(songName, artist, genre, fileExtension = "jpg") {
   this.songName = songName;
   this.artist = artist;
@@ -18,13 +15,9 @@ function Song(songName, artist, genre, fileExtension = "jpg") {
   allSongs.push(this);
 }
 
-// 2. Create a random function that will loop through the new constructor objects.
-
 function getRandomSong() {
   return Math.floor(Math.random() * allSongs.length);
 }
-
-//3. Create a render function to display the song details and image.
 
 Song.prototype.renderSong = function () {
   const image = document.querySelector("img");
@@ -60,10 +53,6 @@ const AllMyLife = new Song("All My Life", "K-Ci & JoJo", "RnB");
 const Brud = new Song("Brudevalsen", "Niels W. Gade", "classical");
 const Something = new Song("Something", "The Beatles", "rock");
 
-// 4. Create function to handle randomiser button:
-// Create a button for the user to click to generate a song.
-//  Add an event listener to the button to listen for clicks and to then randomise and display the song.
-
 const songButton = document
   .getElementById("randomSong")
   .addEventListener("click", HandleClick);
@@ -85,11 +74,6 @@ function HandleClick() {
 
   song.renderSong();
 }
-
-// 3. Add an Event Listener which adds the form content as a new object.
-//4. Declare variables to get form values.
-//5. Use form values to create new Song object.
-//6. Reset Form.
 
 songForm.addEventListener("submit", function (event) {
   event.preventDefault();
