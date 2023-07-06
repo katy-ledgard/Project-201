@@ -128,8 +128,7 @@ function loadPage() {
   let storedTheme = JSON.parse(localStorage.getItem("theme"));
 
   if (storedTheme === null) {
-    console.log("nothing here");
-    return;
+     return;
   }
 
   if (storedTheme === "default") {
