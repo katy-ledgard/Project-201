@@ -1,5 +1,5 @@
 "use strict";
-console.log("Pick a theme!");
+console.log("Pick a colour scheme!");
 
 document
   .getElementById("defaultButton")

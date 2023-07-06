@@ -1,5 +1,5 @@
 "use strict";
-console.log("Hello");
+console.log("First dance");
 
 const songContainer = document.getElementById("themeGenerator");
 const songForm = document.getElementById("songForm");

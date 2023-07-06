@@ -1,5 +1,5 @@
 "use strict";
-console.log("Pick a theme");
+console.log("Wedding theme");
 
 const themeContainer = document.getElementById("themeGenerator");
 const themeForm = document.getElementById("themeForm");
@@ -111,3 +111,6 @@ function loadTheme() {
 }
 
 loadTheme();
+
+
+console.log()

@@ -18,7 +18,11 @@ For the About Us page, they would like information on what the website is used f
 
 They also want a page that will add a little fun to the site, which includes a random generator and a space for users to upload their ideas to be included in the generator. When using the generator, they do not want the same result to be given immediately after.
 
-Finally, they would like the user to have a selection of three colour schemes to choose from for the website which will change the colour theme of the website. They wants this to work across the pages and to remain the next time they return to the site.
+Finally, they would like the user to have a selection of three colour schemes to choose from for the website which will change the colour theme of the website. They want this to work across the pages and to remain the next time they return to the site.
+
+### Wireframe
+
+![wireframe](assets/project_201.jpg)
 
 ### User Stories (and how to achieve them.)
 
