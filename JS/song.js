@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 console.log("Hello");
 
 const songContainer = document.getElementById("songGenerator");
@@ -102,31 +102,46 @@ songForm.addEventListener("submit", function(event){
 
 const newSong = new Song(songName, artist, genres);
 console.log(newSong);
+saveSong();
 
 songForm.reset();
 
 });
 
-// function saveSong() {
-//   let getSong = JSON.stringify(newSong);
-//   localStorage.setItem("newSong", getSong);
-// }
-// saveSong();
+function saveSong() {
+  localStorage.setItem("newSong", JSON.stringify(allSongs));
+ 
+}
 
 // function loadSong() {
-//   let storedSong = JSON.parse(localStorage.getItem("newSong"));
+//   JSON.parse(localStorage.getItem(allSongs));
+// }
 
-//   if (storedSong === null) {
-//     console.log("nothing here");
+// loadSong();
+
+// function loadSong() {
+//   let storedSong = localStorage.getItem(allSongs);
+//   // const songs = JSON.parse(storedSong);
+
+//   let allSongs = JSON.parse(localStorage.getItem(storedSong));
+
+// }
+
+// loadSong();
+
+//   if (songs === null) {
+//     // console.log("nothing here");
 //     return;
 //   }
 
-//   if (storedSong == "newSong") {
-//     // console.log("default");
-//     allSongs.push(newSong);
+//   if (songs) {
+//     for (let i=0; i < songs.length; i++) {
+//       const song = songs[i]
+//     }
+//   }
 //   }
 
 // };
 
-// loadSong();
+
 
