@@ -99,7 +99,7 @@ songForm.addEventListener("submit", function (event) {
   const genres = event.target.genres.value;
 
   const newSong = new Song(songName, artist, genres);
-  
+
   saveSong(newSong);
 
   songForm.reset();
