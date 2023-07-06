@@ -41,4 +41,5 @@ Finally, she would like the user to have a selection of three colour schemes to 
 - Photo by RDNE Stock project: https://www.pexels.com/photo/an-old-book-and-candles-on-wooden-table-with-glass-bottles-7978061/
 - Photo by Key  Notez: https://www.pexels.com/photo/man-and-woman-getting-married-on-the-beach-12178593/
 - Photo by Erik Mclean: https://www.pexels.com/photo/close-up-of-a-wedding-decoration-9738252/
+- Photo by <a href="https://unsplash.com/@gayanianu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gayani Anuththara</a> on <a href="https://unsplash.com/photos/Qkz0IFYmg7g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 - 
