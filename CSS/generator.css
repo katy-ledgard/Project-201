@@ -1,230 +1,229 @@
-
- 
-#songGenerator, #themeGenerator {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+#songGenerator,
+#themeGenerator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-
-#songGenerator, #themeGenerator img {
-    max-width: 500px;
-    max-height: 334px;
-    object-fit: cover;
-    padding: 1rem;
+#songGenerator,
+#themeGenerator img {
+  max-width: 500px;
+  max-height: 334px;
+  object-fit: cover;
+  padding: 1rem;
 }
 
-#songGenerator h2, #themeGenerator h2{
-    font-size: 2.5em;
-    margin: .5em auto;
-    text-align: center;
+#songGenerator h2,
+#themeGenerator h2 {
+  font-size: 2.5em;
+  margin: 0.5em auto;
+  text-align: center;
 }
 
-#songGenerator h3, #themeGenerator h3{
-    font-size: 2em;
-    margin: .5em auto;
-    text-align: center;
+#songGenerator h3,
+#themeGenerator h3 {
+  font-size: 2em;
+  margin: 0.5em auto;
+  text-align: center;
 }
 
-#songGenerator p, #themeGenerator p {
-    font-size: 1.2em;
-    text-align: center;
+#songGenerator p,
+#themeGenerator p {
+  font-size: 1.2em;
+  text-align: center;
 }
 
-.randomButton, .themeBtn {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1em;
-    margin-top: 1em;
+.randomButton,
+.themeBtn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
-#songForm, #themeForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;
+#songForm,
+#themeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
 }
 
-.addSong, .addTheme  {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding: 1rem 3rem; 
-    border: 1px solid black; 
-    margin: 1em auto;
-    text-align: center;
+.addSong,
+.addTheme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 3rem;
+  border: 1px solid black;
+  margin: 1em auto;
+  text-align: center;
 }
 
-.addSong input, label, select {
-    margin-bottom: .75em;
+.addSong input,
+label,
+select {
+  margin-bottom: 0.75em;
 }
 
 .addSong input {
-    font-family: monospace, 'Klee One', cursive, sans-serif;
+  font-family: monospace, "Klee One", cursive, sans-serif;
 }
 
-.addTheme input, label, select {
-    margin-bottom: .75em;
+.addTheme input,
+label {
+  margin-bottom: 0.75em;
 }
 
 .addTheme input {
-    font-family: monospace, 'Klee One', cursive, sans-serif;
+  font-family: monospace, "Klee One", cursive, sans-serif;
 }
 
-
 hr {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .generatorsPage h2 {
-    padding: .75em;
+  padding: 0.75em;
+}
+
+.generatorsPage a {
+  padding: 0.2em;
+}
+
+.gen-container {
+  border: 1px solid black;
+  max-width: 400px;
+  min-width: 200px;
+  margin: 1em auto;
+}
+
+#heart {
+  position: relative;
+  width: 200px;
+  height: 180px;
+  margin: 30px auto 0 auto;
+}
+
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 104px;
+  height: 160px;
+  background: rgb(215, 40, 40);
+  border-radius: 50px 50px 0 0;
+}
+
+#heart:before {
+  left: 104px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+#heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+#heart:hover {
+  -webkit-animation: beat 1s linear infinite alternate;
+  -moz-animation: beat 1s linear infinite alternate;
+  -ms-animation: beat 1s linear infinite alternate;
+  -o-animation: beat 1s linear infinite alternate;
+  animation: beat 1s linear infinite alternate;
+}
+
+@-webkit-keyframes beat {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
   }
-  
-  .generatorsPage a {
-      padding: .2em;
+
+  100% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
   }
-  
-  .gen-container {
-    border: 1px solid black;
-    max-width: 400px;
-    min-width: 200px;
-    margin: 1em auto;
+}
+
+@-moz-keyframes beat {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
   }
-  
-  #heart {
-    position: relative;
-    width: 200px;
-    height: 180px;
-    margin: 30px auto 0 auto;
+
+  100% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
   }
-  
-  #heart:before, #heart:after {
-    position: absolute;
-    content: ""; 
-    left: 50px; 
-    top: 0; 
-    width: 104px; 
-    height: 160px; 
-    background: rgb(215, 40, 40); 
-    border-radius: 50px 50px 0 0; 
+}
+
+@-o-keyframes beat {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
   }
-  
-  #heart:before {
-    left: 104px;
-    -webkit-transform: rotate(-45deg); 
-       -moz-transform: rotate(-45deg); 
-        -ms-transform: rotate(-45deg); 
-         -o-transform: rotate(-45deg); 
-            transform: rotate(-45deg); 
-    -webkit-transform-origin: 0 100%;
-       -moz-transform-origin: 0 100%; 
-        -ms-transform-origin: 0 100%; 
-         -o-transform-origin: 0 100%; 
-            transform-origin: 0 100%;
+
+  100% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
   }
-  
-  #heart:after {
-    left: 0;
-    -webkit-transform: rotate(45deg); 
-       -moz-transform: rotate(45deg); 
-        -ms-transform: rotate(45deg); 
-         -o-transform: rotate(45deg); 
-            transform: rotate(45deg); 
-    -webkit-transform-origin: 100% 100%; 
-       -moz-transform-origin: 100% 100%; 
-        -ms-transform-origin: 100% 100%; 
-         -o-transform-origin: 100% 100%; 
-            transform-origin: 100% 100%;
+}
+
+@keyframes beat {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
   }
-  
-  #heart:hover {
-    -webkit-animation: beat 1s linear infinite alternate;
-    -moz-animation: beat 1s linear infinite alternate;
-    -ms-animation: beat 1s linear infinite alternate;
-    -o-animation: beat 1s linear infinite alternate;
-    animation: beat 1s linear infinite alternate;
-  
+
+  100% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
   }
-  
-  @-webkit-keyframes beat {
-    0% {
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1);
-    }
-  
-    100% {
-      -webkit-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      -o-transform: scale(1.2);
-      transform: scale(1.2);
-  
-    }
-  
-  }
-  
-  @-moz-keyframes beat {
-    0% {
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1);
-    }
-  
-    100% {
-      -webkit-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      -o-transform: scale(1.2);
-      transform: scale(1.2);
-  
-    }
-  
-  }
-  
-  @-o-keyframes beat {
-    0% {
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1);
-    }
-  
-    100% {
-      -webkit-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      -o-transform: scale(1.2);
-      transform: scale(1.2);
-  
-    }
-  
-  }
-  
-  @keyframes beat {
-    0% {
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1);
-    }
-  
-    100% {
-      -webkit-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      -o-transform: scale(1.2);
-      transform: scale(1.2);
-  
-    }
-  
-  }
+}

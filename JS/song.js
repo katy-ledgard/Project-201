@@ -1,13 +1,11 @@
 "use strict";
 console.log("Hello");
 
-const songContainer = document.getElementById("songGenerator");
+const songContainer = document.getElementById("themeGenerator");
 const songForm = document.getElementById("songForm");
 
 let allSongs = [];
 let usedSongs = [];
-// let newSong
-// let userSong = [];
 
 // As a user, I would like a random generator page where I can get wedding song ideas. I would like to know the name of the song, the artist and the style of music.
 // 1. Create a constructor function for wedding songs; using the key:value pairs for a name, the artist and the genre of music.
@@ -71,10 +69,8 @@ const songButton = document
   .addEventListener("click", HandleClick);
 
 function HandleClick() {
-  // songContainer.innerHTML = "";
   let songNumber = getRandomSong();
   let song = allSongs[songNumber];
-  // console.log(song);
 
   if (usedSongs.length == allSongs.length) {
     usedSongs = [];
@@ -86,13 +82,9 @@ function HandleClick() {
   }
 
   usedSongs.push(songNumber);
-  // console.log(usedSongs);
-  // console.log(song);
 
   song.renderSong();
 }
-
-// console.log(allSongs);
 
 // 3. Add an Event Listener which adds the form content as a new object.
 //4. Declare variables to get form values.
@@ -107,7 +99,7 @@ songForm.addEventListener("submit", function (event) {
   const genres = event.target.genres.value;
 
   const newSong = new Song(songName, artist, genres);
-  console.log(newSong);
+  
   saveSong(newSong);
 
   songForm.reset();
@@ -115,19 +107,21 @@ songForm.addEventListener("submit", function (event) {
 
 function saveSong() {
   localStorage.setItem("newSong", JSON.stringify(allSongs));
-};
+}
 
 function loadSong() {
   let storedSong = JSON.parse(localStorage.getItem("newSong"));
-// console.log(storedSong);
-if (storedSong) {
-  allSongs = [];
-  for (let i = 0; i < storedSong.length; i++) {
-    new Song(storedSong[i].songName, storedSong[i].artist, storedSong[i].genre)
+
+  if (storedSong) {
+    allSongs = [];
+    for (let i = 0; i < storedSong.length; i++) {
+      new Song(
+        storedSong[i].songName,
+        storedSong[i].artist,
+        storedSong[i].genre
+      );
+    }
   }
 }
-  
-};
 
 loadSong();
-

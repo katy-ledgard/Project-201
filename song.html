@@ -3,22 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Petit+Formal+Script&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Klee+One&family=Petit+Formal+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <title>The Wedding Guidebook</title>
     <meta
       name="description"
       content="Wedding inspiration and wedding random generators"
     />
-    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/reset.css" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/generator.css">
+    <link rel="stylesheet" href="CSS/generator.css" />
   </head>
   <body>
     <header id="header">
-      <a href="index.html"><h1>The Wedding<br>Guidebook</h1></a>
+      <a href="index.html"
+        ><h1>The Wedding<br />Guidebook</h1></a
+      >
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -26,95 +34,98 @@
           <li><a href="generators.html">Random Generators</a></li>
         </ul>
       </nav>
-      
     </header>
     <main>
-      
-        <section class="choose-theme2">
-                    <form>
-            <label>
-              <input
-                type="radio"
-                name="theme"
-                id="defaultButton"
-                class="theme"
-                value="default"
-                checked
-              />
-              <span>Default Theme</span>
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="theme"
-                id="greenButton"
-                class="theme"
-                value="green"
-              />
-              <span>Green Theme</span>
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="theme"
-                id="purpleButton"
-                class="theme"
-                value="purple"
-              />
-              <span>Purple Theme</span>
-            </label>
-          </form>
-        </section>
-      
-      <div class="container">
-      <section id="songGenerator">
-        <h2>'First Dance' Song Generator.</h2>
-        <h3></h3>
-        <img src="assets/dance.jpg" alt="a newly wed couple sharing their first dance">
-        <p></p>
-      </section>
-      <section class="randomButton">
-        <button class="btnAnimate" id="randomSong">Get Song.</button>
-      </section>
-      
-      <hr>
-      <section>
-        <form id="songForm">
-          <fieldset class="addSong">
-            <legend>Add a Song</legend>
-            <label for="song-name">Song Title:</label>
+      <section class="choose-theme2">
+        <form>
+          <label>
             <input
-              type="text"
-              id="song-name"
-              name="songName"
-              placeholder="Song Title..."
-              required
+              type="radio"
+              name="theme"
+              id="defaultButton"
+              class="theme"
+              value="default"
+              checked
             />
-            <label for="artist-name">Artist:</label>
+            <span>Default Theme</span>
+          </label>
+          <label>
             <input
-              type="text"
-              id="artist-name"
-              name="artist"
-              placeholder="Artist name..."
-              required
+              type="radio"
+              name="theme"
+              id="greenButton"
+              class="theme"
+              value="green"
             />
-            <label for="genres">Pick a genre:</label>
-            <select name="genres" id="genre" required>
-              <option value="pop">Pop</option>
-              <option value="rock">Rock</option>
-              <option value="classical">Classical</option>
-              <option value="hip-hop">Hip Hop</option>
-              <option value="RnB">RnB</option>
-              <option value="folk">Folk</option>
-              <option value="musical-theatre">Musical Theatre</option>
-              <option value="other">other</option>
-            </select>
-            <button class="btnAnimate" type="submit" id="submit">Submit</button>
-          </fieldset>
+            <span>Green Theme</span>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="theme"
+              id="purpleButton"
+              class="theme"
+              value="purple"
+            />
+            <span>Purple Theme</span>
+          </label>
         </form>
       </section>
-      
-    </div>
+
+      <div class="container">
+        <section id="themeGenerator">
+          <h2>'First Dance' Song Generator.</h2>
+          <img
+            src="assets/dance.jpg"
+            alt="a newly wed couple sharing their first dance"
+          />
+          <h3></h3>
+          <p></p>
+        </section>
+
+        <section class="randomButton">
+          <button class="btnAnimate" id="randomSong">Get Song.</button>
+        </section>
+
+        <hr />
+        <section>
+          <form id="songForm">
+            <fieldset class="addSong">
+              <legend>Add a Song</legend>
+              <label for="song-name">Song Title:</label>
+              <input
+                type="text"
+                id="song-name"
+                name="songName"
+                placeholder="Song Title..."
+                required
+              />
+              <label for="artist-name">Artist:</label>
+              <input
+                type="text"
+                id="artist-name"
+                name="artist"
+                placeholder="Artist name..."
+                required
+              />
+              <label for="genres">Pick a genre:</label>
+              <select name="genres" id="genre" required>
+                <option value="pop">Pop</option>
+                <option value="rock">Rock</option>
+                <option value="classical">Classical</option>
+                <option value="hip-hop">Hip Hop</option>
+                <option value="RnB">RnB</option>
+                <option value="folk">Folk</option>
+                <option value="musical-theatre">Musical Theatre</option>
+                <option value="other">other</option>
+              </select>
+              <button class="btnAnimate" type="submit" id="submit">
+                Submit
+              </button>
+            </fieldset>
+          </form>
+        </section>
+      </div>
     </main>
     <footer id="footer">
       <p>&copy; The Wedding Guidebook | 2023</p>

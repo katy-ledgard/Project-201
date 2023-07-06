@@ -1,11 +1,17 @@
 "use strict";
 console.log("Pick a theme!");
 
-document.getElementById("defaultButton").addEventListener("click", chooseDefaultTheme);
+document
+  .getElementById("defaultButton")
+  .addEventListener("click", chooseDefaultTheme);
 
-document.getElementById("greenButton").addEventListener("click", chooseGreenTheme);
+document
+  .getElementById("greenButton")
+  .addEventListener("click", chooseGreenTheme);
 
-document.getElementById("purpleButton").addEventListener("click", choosePurpleTheme);
+document
+  .getElementById("purpleButton")
+  .addEventListener("click", choosePurpleTheme);
 
 let header = document.getElementById("header");
 let footer = document.getElementById("footer");
@@ -16,9 +22,6 @@ let allButtons2 = document.getElementById("submit");
 let theme = "default";
 
 function chooseDefaultTheme() {
-  // let header = document.getElementById("header");
-  // let footer = document.getElementById("footer");
-  // let bio = document.getElementById("bio");
   let button = document.getElementById("defaultButton");
   header.classList.remove("green");
   header.classList.remove("purple");
@@ -45,17 +48,14 @@ function chooseDefaultTheme() {
     allButtons2.classList.add("default");
   }
 
- if (button) {
-  button.setAttribute("checked", "checked");
- }
+  if (button) {
+    button.setAttribute("checked", "checked");
+  }
   theme = "default";
   saveTheme();
 }
 
 function chooseGreenTheme() {
-  // let header = document.getElementById("header");
-  // let footer = document.getElementById("footer");
-  // let bio = document.getElementById("bio");
   let button = document.getElementById("greenButton");
   header.classList.remove("default");
   header.classList.remove("purple");
@@ -64,34 +64,31 @@ function chooseGreenTheme() {
   footer.classList.remove("purple");
   footer.classList.add("green");
 
-  if (bio){
-  bio.classList.remove("default");
-  bio.classList.remove("purple");
-  bio.classList.add("green");
+  if (bio) {
+    bio.classList.remove("default");
+    bio.classList.remove("purple");
+    bio.classList.add("green");
   }
 
   if (allButtons) {
     allButtons.classList.remove("default");
     allButtons.classList.remove("purple");
     allButtons.classList.add("green");
-    }
-    if (allButtons2) {
-      allButtons2.classList.remove("default");
-      allButtons2.classList.remove("purple");
-      allButtons2.classList.add("green");
-      }  
-    
- if (button) {
-  button.setAttribute("checked", "checked");
- }
+  }
+  if (allButtons2) {
+    allButtons2.classList.remove("default");
+    allButtons2.classList.remove("purple");
+    allButtons2.classList.add("green");
+  }
+
+  if (button) {
+    button.setAttribute("checked", "checked");
+  }
   theme = "green";
   saveTheme();
 }
 
 function choosePurpleTheme() {
-  // let header = document.getElementById("header");
-  // let footer = document.getElementById("footer");
-  // let bio = document.getElementById("bio");
   let button = document.getElementById("purpleButton");
   header.classList.remove("green");
   header.classList.remove("default");
@@ -100,24 +97,24 @@ function choosePurpleTheme() {
   footer.classList.remove("default");
   footer.classList.add("purple");
   if (bio) {
-  bio.classList.remove("green");
-  bio.classList.remove("default");
-  bio.classList.add("purple");
-  } 
+    bio.classList.remove("green");
+    bio.classList.remove("default");
+    bio.classList.add("purple");
+  }
   if (allButtons) {
     allButtons.classList.remove("green");
     allButtons.classList.remove("default");
     allButtons.classList.add("purple");
-    }   
-    if (allButtons2) {
-      allButtons2.classList.remove("green");
-      allButtons2.classList.remove("default");
-      allButtons2.classList.add("purple");
-      }   
+  }
+  if (allButtons2) {
+    allButtons2.classList.remove("green");
+    allButtons2.classList.remove("default");
+    allButtons2.classList.add("purple");
+  }
 
- if (button) {
-  button.setAttribute("checked", "checked");
- }
+  if (button) {
+    button.setAttribute("checked", "checked");
+  }
   theme = "purple";
   saveTheme();
 }
@@ -136,13 +133,10 @@ function loadPage() {
   }
 
   if (storedTheme === "default") {
-    // console.log("default");
     chooseDefaultTheme();
   } else if (storedTheme === "green") {
-    // console.log("green");
     chooseGreenTheme();
   } else if (storedTheme === "purple") {
-    // console.log("purple");
     choosePurpleTheme();
   }
 }
