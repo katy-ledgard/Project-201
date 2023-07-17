@@ -1,5 +1,7 @@
 # Project-201
 
+Here is my end of 201 Project for the Tech Educators Full Stack MERN Bootcamp, created in 4 days after completing the first four weeks of the bootcamp.
+
 ## The Wedding Guidebook
 
 This project is a website that contains content for people who are planning their wedding. It has an index page which introduces the site, has some wedding inspired content and a contact form. This site is also designed to add some lighthearted fun, so it has some random generators that will suggest first dance songs and wedding themes. Both generators will have a form so that users can submit their own ideas for the generators, which are then added to their Local Storage. Users will also be able to change the colour scheme from a selection of options, which is also stored to Local Storage.
